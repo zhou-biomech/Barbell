@@ -3,7 +3,7 @@ function xc = centroidx(weight, bar, headNeck, trunk, thigh, shank, ...
 
 if nargin==14; i = length(knee.x); end
 
-headNeckLx = cosd(trunk.a(i))*headNeck.L; % 头颈长度在 x 方向上的投影
+headNeckLx = sind(trunk.a(i))*headNeck.L; % 头颈长度在 x 方向上的投影
 
 % 对(0,0) 的矩
 Moment = bar.x(i) * bar.wt + hand.x(i)*hand.wt + ...

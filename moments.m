@@ -4,7 +4,7 @@ if nargin==13; isplot = true; end
 
 g = 9.8/100;  % [1/100 m/s^2] 重力加速度，1/100 是将 cm 转为 m
 
-headNeckLx = cosd(trunk.a)*headNeck.L; % 头颈长度在 x 方向上的投影
+headNeckLx = sind(trunk.a)*headNeck.L; % 头颈长度在 x 方向上的投影
 
 Mnt = dictionary();
 
